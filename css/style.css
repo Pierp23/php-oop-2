@@ -1,0 +1,26 @@
+.my-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.my-col {
+    width: calc(100% / 4 - 20px);
+    margin: 10px 10px;
+}
+
+.card .img {
+    width: 100%;
+    height: 200px;
+}
+
+.card .img img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.card div span {
+    font-weight: bold;
+}
