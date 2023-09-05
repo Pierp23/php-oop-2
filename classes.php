@@ -1,4 +1,8 @@
 <?php
+
+require_once __DIR__ . '/traits/price.php';
+require_once __DIR__ . '/traits/name.php';
+
 class Categories
 {
     public $category;
@@ -10,15 +14,13 @@ class Categories
 };
 
 
-
-
 class Products
 {
-    public $category;
-    public $name;
-    public $price;
-    public $img;
+    use Name;
+    use Price;
 
+    public $category;
+    public $img;
 
     public function __construct($category, $name, $price, $img)
     {
