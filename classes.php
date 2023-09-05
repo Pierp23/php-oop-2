@@ -26,8 +26,13 @@ class Products
     {
         $this->category = $category;
         $this->name = $name;
-        $this->price = $price;
+
         $this->img = $img;
+        if (is_numeric($price)) {
+            return $this->price = $price;
+        } else {
+            throw new Exception('Attento! Il dato inserito è sbagliato!');
+        };
     }
 };
 

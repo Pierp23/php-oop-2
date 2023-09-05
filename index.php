@@ -38,7 +38,7 @@ require_once __DIR__ . '/newObjects.php';
                             </div>
                             <div>
                                 <span>Prezzo: €</span>
-                                <?php echo $product->price ?>
+                                <?php echo number_format($product->price, 2, ',', '.') ?>
 
                             </div>
                             <div>
