@@ -12,7 +12,7 @@ class Categories
 
 
 
-class Products extends Categories
+class Products
 {
     public $category;
     public $name;
@@ -22,7 +22,7 @@ class Products extends Categories
 
     public function __construct($category, $name, $price, $img)
     {
-        parent::__construct($category);
+        $this->category = $category;
         $this->name = $name;
         $this->price = $price;
         $this->img = $img;
